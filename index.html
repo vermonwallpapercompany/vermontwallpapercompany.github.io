@@ -4,24 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO: Core -->
-  <title>Vermont Wallpaper Company | Wallpaper Installation, Painting & Finish Carpentry</title>
-  <meta name="description" content="Vermont Wallpaper Company, led by Elan Hugo, specializes in wallpaper installation and removal, painting, and finish carpentry in Vermont's Northern Champlain Valley.">
+  <title>Vermont Wallpaper Company | Wallpaper Installation & Finish Carpentry</title>
+  <meta name="description" content="Vermont Wallpaper Company, led by Elan Hugo, specializes in wallpaper installation and removal and finish carpentry in Vermont's Northern Champlain Valley.">
   <link rel="canonical" href="https://vermontwallpapercompany.com/">
 
-  <!-- SEO: Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vermontwallpapercompany.com/">
   <meta property="og:title" content="Vermont Wallpaper Company | Elan Hugo">
-  <meta property="og:description" content="Wallpaper installation & removal, painting, and finish carpentry in Vermont's Northern Champlain Valley.">
+  <meta property="og:description" content="Wallpaper installation & removal and finish carpentry in Vermont's Northern Champlain Valley.">
   <meta property="og:site_name" content="Vermont Wallpaper Company">
-
-  <!-- SEO: Twitter Card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Vermont Wallpaper Company | Elan Hugo">
-  <meta name="twitter:description" content="Wallpaper installation & removal, painting, and finish carpentry in Vermont's Northern Champlain Valley.">
+  <meta name="twitter:description" content="Wallpaper installation & removal and finish carpentry in Vermont's Northern Champlain Valley.">
 
-  <!-- SEO: LocalBusiness Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,31 +25,20 @@
     "url": "https://vermontwallpapercompany.com",
     "email": "info@vermontwallpapercompany.com",
     "telephone": "+18028585222",
-    "founder": {
-      "@type": "Person",
-      "name": "Elan Hugo"
-    },
+    "founder": { "@type": "Person", "name": "Elan Hugo" },
     "address": {
       "@type": "PostalAddress",
+      "addressLocality": "North Ferrisburgh",
       "addressRegion": "VT",
       "addressCountry": "US"
     },
-    "areaServed": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 44.5,
-        "longitude": -73.2
-      },
-      "description": "Northern Champlain Valley, Vermont"
-    },
+    "areaServed": "Northern Champlain Valley, Vermont",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Services",
       "itemListElement": [
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wallpaper Installation" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wallpaper Removal" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Painting" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Finish Carpentry" } }
       ]
     }
@@ -63,69 +47,66 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Lato:wght@300;400&display=swap" rel="stylesheet">
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --forest:       #243B2E;
-      --forest-mid:   #355240;
-      --forest-light: #4A7260;
-      --cream:        #F4EDD9;
-      --cream-dark:   #E5DABD;
-      --gold:         #B8922A;
-      --gold-light:   #CFA94A;
-      --charcoal:     #1C1C1A;
-      --muted:        #5C5C52;
-      --white:        #FDFAF3;
+      --forest:      #243B2E;
+      --forest-mid:  #355240;
+      --forest-soft: #4A7260;
+      --cream:       #F2EAD3;
+      --cream-dark:  #DDD3B8;
+      --paper:       #FAF6EC;
+      --ink:         #1E1E1A;
+      --ink-soft:    #4A4840;
+      --gold:        #A07828;
     }
 
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Jost', sans-serif;
-      background: var(--cream);
-      color: var(--charcoal);
+      font-family: 'Lato', sans-serif;
       font-weight: 300;
-      line-height: 1.7;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.75;
     }
 
     /* ── NAV ── */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
-      z-index: 200;
+      z-index: 100;
+      padding: 1.25rem 2.5rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1.1rem 3rem;
-      background: rgba(28, 44, 34, 0.97);
-      backdrop-filter: blur(10px);
+      background: var(--forest);
     }
 
     .nav-brand {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
       font-weight: 400;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
       color: var(--cream);
       text-decoration: none;
+      letter-spacing: 0.02em;
     }
 
     .nav-links {
+      list-style: none;
       display: flex;
       gap: 2.5rem;
-      list-style: none;
     }
 
     .nav-links a {
-      font-size: 0.73rem;
+      font-size: 0.78rem;
       font-weight: 400;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: rgba(244,237,217,0.65);
+      color: rgba(242,234,211,0.6);
       text-decoration: none;
       transition: color 0.2s;
     }
@@ -134,602 +115,324 @@
 
     /* ── HERO ── */
     .hero {
-      min-height: 100vh;
-      background-color: var(--forest);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      padding: 14rem 2.5rem 8rem;
+      background: var(--forest);
       position: relative;
       overflow: hidden;
     }
 
-    .hero-left {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 0 4rem 6rem;
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-right {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-right-pattern {
-      position: absolute;
-      inset: 0;
-      background-image:
-        repeating-linear-gradient(
-          45deg,
-          rgba(74,114,96,0.07) 0px,
-          rgba(74,114,96,0.07) 1px,
-          transparent 1px,
-          transparent 28px
-        ),
-        repeating-linear-gradient(
-          -45deg,
-          rgba(184,146,42,0.05) 0px,
-          rgba(184,146,42,0.05) 1px,
-          transparent 1px,
-          transparent 28px
-        );
-    }
-
-    .hero-right-inner {
-      position: absolute;
-      inset: 15%;
-      border: 1px solid rgba(244,237,217,0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .hero-right-inner::before {
+    .hero::before {
       content: '';
       position: absolute;
-      inset: 12px;
-      border: 1px solid rgba(244,237,217,0.05);
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Cpath d='M0 2 L4 2' stroke='%23ffffff' stroke-width='0.3' stroke-opacity='0.04'/%3E%3Cpath d='M2 0 L2 4' stroke='%23ffffff' stroke-width='0.3' stroke-opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
     }
 
-    .hero-monogram {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 7rem;
-      font-weight: 300;
-      color: rgba(244,237,217,0.06);
-      letter-spacing: 0.1em;
-      user-select: none;
-    }
-
-    .hero-eyebrow {
-      font-size: 0.68rem;
+    .hero-location {
+      font-size: 0.75rem;
       font-weight: 400;
-      letter-spacing: 0.32em;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: var(--gold-light);
-      margin-bottom: 1.4rem;
+      color: var(--gold);
+      margin-bottom: 2rem;
     }
 
     .hero h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(3.2rem, 5.5vw, 6rem);
-      font-weight: 300;
-      line-height: 0.95;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 6.5vw, 6.5rem);
+      font-weight: 400;
+      line-height: 1.05;
       color: var(--cream);
-      letter-spacing: -0.01em;
-      margin-bottom: 2rem;
+      max-width: 820px;
+      margin-bottom: 2.5rem;
     }
 
     .hero h1 em {
       font-style: italic;
-      color: rgba(244,237,217,0.55);
-      display: block;
+      color: rgba(242,234,211,0.5);
     }
 
-    .hero-desc {
-      font-size: 0.92rem;
+    .hero-tagline {
+      font-size: 1rem;
       font-weight: 300;
-      color: rgba(244,237,217,0.55);
-      letter-spacing: 0.04em;
-      max-width: 340px;
-      margin-bottom: 3rem;
-      line-height: 1.9;
-    }
-
-    .btn-outline {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-family: 'Jost', sans-serif;
-      font-size: 0.75rem;
-      font-weight: 400;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--cream);
-      text-decoration: none;
-      border: 1px solid rgba(244,237,217,0.3);
-      padding: 0.85rem 1.8rem;
-      transition: border-color 0.25s, background 0.25s;
-    }
-
-    .btn-outline:hover {
-      border-color: var(--gold-light);
-      background: rgba(207,169,74,0.06);
-    }
-
-    .hero-divider {
-      position: absolute;
-      top: 0; bottom: 0;
-      left: 50%;
-      width: 1px;
-      background: rgba(244,237,217,0.08);
-      z-index: 3;
+      color: rgba(242,234,211,0.55);
+      max-width: 420px;
+      line-height: 1.85;
     }
 
     /* ── INTRO ── */
     .intro {
-      background: var(--white);
-      padding: 5.5rem 3rem;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 5rem;
-      align-items: start;
+      padding: 5rem 2.5rem;
+      background: var(--paper);
+      max-width: 780px;
     }
 
-    .intro-label {
-      font-size: 0.7rem;
+    .intro p {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.2rem, 2.2vw, 1.6rem);
       font-weight: 400;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--gold);
-      padding-top: 0.35rem;
-    }
-
-    .intro-text {
-      font-size: 1.25rem;
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 300;
       line-height: 1.65;
       color: var(--forest);
     }
 
-    .intro-text strong {
-      font-weight: 600;
+    .intro p em {
+      font-style: italic;
+      color: var(--forest-soft);
+    }
+
+    hr.rule {
+      border: none;
+      border-top: 1px solid var(--cream-dark);
     }
 
     /* ── SERVICES ── */
     #services {
-      padding: 7rem 3rem;
+      padding: 5.5rem 2.5rem;
       background: var(--cream);
     }
 
-    .section-eyebrow {
-      font-size: 0.7rem;
+    .eyebrow {
+      font-size: 0.72rem;
       font-weight: 400;
-      letter-spacing: 0.3em;
+      letter-spacing: 0.25em;
       text-transform: uppercase;
       color: var(--gold);
-      margin-bottom: 1rem;
+      margin-bottom: 2.5rem;
       display: block;
     }
 
-    .section-heading {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2rem, 3.5vw, 3rem);
-      font-weight: 300;
-      color: var(--forest);
-      line-height: 1.1;
-      margin-bottom: 4rem;
-      max-width: 480px;
+    .services-list {
+      list-style: none;
+      border-top: 1px solid var(--cream-dark);
     }
 
-    .section-heading em {
-      font-style: italic;
-      color: var(--forest-light);
-    }
-
-    .services-grid {
+    .services-list li {
+      border-bottom: 1px solid var(--cream-dark);
+      padding: 2rem 0;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 0;
-      border: 1px solid var(--cream-dark);
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      align-items: start;
     }
 
-    .service-card {
-      padding: 2.8rem 2.2rem;
-      border-right: 1px solid var(--cream-dark);
-      position: relative;
-      transition: background 0.25s;
-    }
-
-    .service-card:last-child { border-right: none; }
-
-    .service-card:hover { background: var(--white); }
-
-    .service-number {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2.5rem;
-      font-weight: 300;
-      color: rgba(36,59,46,0.1);
-      line-height: 1;
-      margin-bottom: 1.5rem;
-      display: block;
-    }
-
-    .service-icon {
-      width: 36px;
-      height: 36px;
-      margin-bottom: 1.2rem;
-    }
-
-    .service-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.35rem;
+    .service-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
       font-weight: 400;
       color: var(--forest);
-      margin-bottom: 0.75rem;
-      line-height: 1.2;
+      padding-top: 0.15rem;
     }
 
-    .service-desc {
-      font-size: 0.88rem;
+    .service-name em {
+      font-style: italic;
+      color: var(--forest-soft);
+      font-size: 0.88em;
+      display: block;
+      margin-top: 0.2rem;
+    }
+
+    .service-body {
+      font-size: 0.92rem;
       font-weight: 300;
-      color: var(--muted);
-      line-height: 1.8;
-    }
-
-    .service-line {
-      width: 28px;
-      height: 2px;
-      background: var(--gold);
-      margin-bottom: 1.4rem;
+      color: var(--ink-soft);
+      line-height: 1.85;
+      max-width: 520px;
     }
 
     /* ── PORTFOLIO ── */
     #portfolio {
-      padding: 7rem 3rem;
+      padding: 5.5rem 2.5rem;
       background: var(--forest);
     }
 
-    #portfolio .section-eyebrow { color: var(--gold-light); }
-    #portfolio .section-heading { color: var(--cream); }
-    #portfolio .section-heading em { color: rgba(244,237,217,0.45); }
+    #portfolio .eyebrow { color: rgba(160,120,40,0.8); }
 
-    .portfolio-note {
-      font-size: 0.85rem;
-      font-weight: 300;
-      color: rgba(244,237,217,0.45);
-      margin-top: -3rem;
-      margin-bottom: 3.5rem;
+    .portfolio-intro {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
       font-style: italic;
+      color: rgba(242,234,211,0.35);
+      margin-bottom: 2.5rem;
     }
 
     .portfolio-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 1.5px;
+      gap: 2px;
     }
 
-    .portfolio-item {
-      aspect-ratio: 4/3;
+    .portfolio-cell {
       background: var(--forest-mid);
+      aspect-ratio: 4/3;
       position: relative;
       overflow: hidden;
-      cursor: pointer;
     }
 
-    .portfolio-item:first-child {
+    .portfolio-cell.wide {
       grid-column: span 2;
       aspect-ratio: 8/3;
     }
 
-    .portfolio-placeholder {
+    .portfolio-cell-label {
       position: absolute;
-      inset: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.75rem;
-      transition: background 0.25s;
-    }
-
-    .portfolio-item:hover .portfolio-placeholder {
-      background: rgba(184,146,42,0.08);
-    }
-
-    .portfolio-plus {
-      width: 32px;
-      height: 32px;
-      position: relative;
-      opacity: 0.25;
-    }
-
-    .portfolio-plus::before,
-    .portfolio-plus::after {
-      content: '';
-      position: absolute;
-      background: var(--cream);
-      border-radius: 1px;
-    }
-
-    .portfolio-plus::before {
-      width: 1px;
-      height: 100%;
-      left: 50%;
-      top: 0;
-    }
-
-    .portfolio-plus::after {
-      height: 1px;
-      width: 100%;
-      top: 50%;
-      left: 0;
-    }
-
-    .portfolio-caption {
-      font-size: 0.7rem;
-      letter-spacing: 0.2em;
+      bottom: 0; left: 0; right: 0;
+      padding: 0.75rem 1rem;
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: rgba(244,237,217,0.2);
+      color: rgba(242,234,211,0.22);
       font-weight: 400;
     }
 
-    .portfolio-upload-note {
-      margin-top: 2.5rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .portfolio-upload-note span {
+    .portfolio-hint {
+      margin-top: 2rem;
       font-size: 0.78rem;
-      letter-spacing: 0.08em;
-      color: rgba(244,237,217,0.35);
       font-style: italic;
+      color: rgba(242,234,211,0.22);
     }
 
-    .portfolio-upload-note::before {
-      content: '';
-      width: 32px;
-      height: 1px;
-      background: rgba(244,237,217,0.2);
-      flex-shrink: 0;
-    }
-
-    /* ── SERVICE AREA ── */
+    /* ── AREA ── */
     #area {
-      padding: 7rem 3rem;
-      background: var(--white);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      align-items: center;
+      padding: 5.5rem 2.5rem;
+      background: var(--paper);
     }
 
-    .area-map {
-      aspect-ratio: 1;
-      border: 1px solid var(--cream-dark);
-      position: relative;
-      overflow: hidden;
-      background: var(--cream);
+    .area-body { max-width: 620px; }
+
+    .area-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 400;
+      color: var(--forest);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
     }
 
-    .area-map-inner {
-      position: absolute;
-      inset: 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+    .area-heading em { font-style: italic; color: var(--forest-soft); }
 
-    .champlain-graphic {
-      width: 100%;
-      height: 100%;
-    }
-
-    .area-list {
-      margin-top: 2.5rem;
-      list-style: none;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.5rem 2rem;
-    }
-
-    .area-list li {
-      font-size: 0.88rem;
+    .area-body p {
+      font-size: 0.95rem;
       font-weight: 300;
-      color: var(--muted);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+      color: var(--ink-soft);
+      line-height: 1.9;
+      margin-bottom: 1rem;
     }
 
-    .area-list li::before {
-      content: '';
-      width: 4px;
-      height: 4px;
-      background: var(--gold);
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    .area-blurb {
-      font-size: 1rem;
+    .area-towns {
+      margin-top: 1.75rem;
+      font-size: 0.85rem;
       font-weight: 300;
-      color: var(--muted);
-      line-height: 1.85;
-      margin-top: 1.5rem;
+      color: var(--ink-soft);
+      line-height: 2;
+      border-left: 2px solid var(--cream-dark);
+      padding-left: 1.25rem;
     }
 
     /* ── CONTACT ── */
     #contact {
-      padding: 7rem 3rem;
+      padding: 5.5rem 2.5rem;
       background: var(--cream);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      align-items: start;
     }
 
-    .contact-details {
+    .contact-block { max-width: 500px; }
+
+    .contact-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 400;
+      color: var(--forest);
+      line-height: 1.2;
+      margin-bottom: 1.75rem;
+    }
+
+    .contact-heading em { font-style: italic; color: var(--forest-soft); }
+
+    .contact-reach {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--ink-soft);
+      margin-bottom: 2.5rem;
+      line-height: 1.85;
+    }
+
+    .contact-items {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
-      margin-top: 3rem;
+      gap: 1.5rem;
     }
 
-    .contact-item-label {
+    .contact-label {
       font-size: 0.68rem;
-      letter-spacing: 0.25em;
+      font-weight: 400;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
       color: var(--gold);
-      font-weight: 400;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.25rem;
     }
 
-    .contact-item-value {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.3rem;
-      font-weight: 300;
+    .contact-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
       color: var(--forest);
     }
 
-    .contact-item-value a {
+    .contact-value a {
       color: inherit;
       text-decoration: none;
-      border-bottom: 1px solid rgba(36,59,46,0.2);
+      border-bottom: 1px solid var(--cream-dark);
       transition: border-color 0.2s;
     }
 
-    .contact-item-value a:hover {
-      border-color: var(--gold);
-    }
-
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-    }
-
-    .form-group label {
-      font-size: 0.7rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--muted);
-      font-weight: 400;
-    }
-
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
-      font-family: 'Jost', sans-serif;
-      font-size: 0.9rem;
-      font-weight: 300;
-      background: var(--white);
-      border: 1px solid var(--cream-dark);
-      color: var(--charcoal);
-      padding: 0.75rem 1rem;
-      outline: none;
-      transition: border-color 0.2s;
-      border-radius: 0;
-      appearance: none;
-      width: 100%;
-    }
-
-    .form-group input:focus,
-    .form-group textarea:focus,
-    .form-group select:focus {
-      border-color: var(--forest-light);
-    }
-
-    .form-group textarea { min-height: 120px; resize: vertical; }
-
-    .btn-submit {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.6rem;
-      font-family: 'Jost', sans-serif;
-      font-size: 0.75rem;
-      font-weight: 400;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--cream);
-      background: var(--forest);
-      border: none;
-      padding: 1rem 2.5rem;
-      cursor: pointer;
-      transition: background 0.25s;
-      margin-top: 0.5rem;
-    }
-
-    .btn-submit:hover { background: var(--forest-mid); }
+    .contact-value a:hover { border-color: var(--gold); }
 
     /* ── FOOTER ── */
     footer {
-      background: var(--charcoal);
-      padding: 2.5rem 3rem;
+      background: var(--forest);
+      padding: 2rem 2.5rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
-    .footer-brand {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 0.9rem;
-      font-weight: 300;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: rgba(244,237,217,0.45);
+    .footer-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: rgba(242,234,211,0.4);
     }
 
     .footer-copy {
       font-size: 0.72rem;
       font-weight: 300;
-      letter-spacing: 0.08em;
-      color: rgba(244,237,217,0.25);
+      letter-spacing: 0.06em;
+      color: rgba(242,234,211,0.2);
     }
 
     /* ── RESPONSIVE ── */
-    @media (max-width: 900px) {
-      nav { padding: 1rem 1.5rem; }
-      .nav-links { gap: 1.5rem; }
-      .hero { grid-template-columns: 1fr; }
-      .hero-right { display: none; }
-      .hero-left { padding: 0 1.5rem 5rem; padding-top: 8rem; }
-      .intro { grid-template-columns: 1fr; gap: 1.5rem; padding: 4rem 1.5rem; }
-      #services { padding: 5rem 1.5rem; }
-      .services-grid { grid-template-columns: 1fr 1fr; }
-      .service-card { border-bottom: 1px solid var(--cream-dark); }
+    @media (max-width: 720px) {
+      nav { padding: 1rem 1.25rem; }
+      .nav-links { display: none; }
+      .hero { padding: 10rem 1.25rem 5rem; }
+      .intro { padding: 3.5rem 1.25rem; }
+      #services, #portfolio, #area, #contact { padding: 4rem 1.25rem; }
+      .services-list li { grid-template-columns: 1fr; gap: 0.5rem; }
       .portfolio-grid { grid-template-columns: 1fr 1fr; }
-      .portfolio-item:first-child { grid-column: span 2; aspect-ratio: 2/1; }
-      #portfolio { padding: 5rem 1.5rem; }
-      #area { grid-template-columns: 1fr; gap: 2.5rem; padding: 5rem 1.5rem; }
-      #contact { grid-template-columns: 1fr; gap: 3rem; padding: 5rem 1.5rem; }
-      footer { flex-direction: column; gap: 0.75rem; text-align: center; padding: 2rem 1.5rem; }
+      .portfolio-cell.wide { grid-column: span 2; }
+      footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem 1.25rem; }
     }
 
-    @media (max-width: 600px) {
-      .services-grid { grid-template-columns: 1fr; }
+    @media (max-width: 480px) {
       .portfolio-grid { grid-template-columns: 1fr; }
-      .portfolio-item:first-child { grid-column: span 1; aspect-ratio: 4/3; }
-      .area-list { grid-template-columns: 1fr; }
-      .nav-links { display: none; }
+      .portfolio-cell.wide { grid-column: span 1; aspect-ratio: 4/3; }
     }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
-    <a href="#" class="nav-brand">Vermont Wallpaper Co.</a>
+    <a href="#" class="nav-brand">Vermont Wallpaper Company</a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
@@ -738,231 +441,100 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
   <header class="hero">
-    <div class="hero-divider"></div>
-    <div class="hero-left">
-      <p class="hero-eyebrow">Northern Champlain Valley, Vermont</p>
-      <h1>
-        Vermont<br>
-        Wallpaper
-        <em>Company</em>
-      </h1>
-      <p class="hero-desc">Wallpaper installation &amp; removal, painting, and finish carpentry — crafted with care in northern Vermont.</p>
-      <a href="#contact" class="btn-outline">
-        Request a Quote
-        <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.2">
-          <path d="M3 9h12M9 3l6 6-6 6"/>
-        </svg>
-      </a>
-    </div>
-    <div class="hero-right" aria-hidden="true">
-      <div class="hero-right-pattern"></div>
-      <div class="hero-right-inner">
-        <span class="hero-monogram">VWC</span>
-      </div>
-    </div>
+    <p class="hero-location">North Ferrisburgh, Vermont</p>
+    <h1>
+      Wallpaper hung<br>
+      <em>the right way.</em>
+    </h1>
+    <p class="hero-tagline">Wallpaper installation & removal and finish carpentry, serving the Northern Champlain Valley.</p>
   </header>
 
-  <!-- INTRO -->
   <div class="intro">
-    <span class="intro-label">About</span>
-    <p class="intro-text">
-      <strong>Elan Hugo</strong> brings careful, experienced hands to every project — from delicate paste-the-wall installations to bold mural papers, custom paint finishes, and refined trim carpentry. Based in Vermont's Northern Champlain Valley, serving homes and businesses with the attention they deserve.
-    </p>
+    <p>Elan Hugo is a wallpaper contractor based in North Ferrisburgh — bringing careful hands and honest work to homes across northern Vermont.</p>
   </div>
 
-  <!-- SERVICES -->
+  <hr class="rule">
+
   <section id="services">
-    <span class="section-eyebrow">What we do</span>
-    <h2 class="section-heading">Craftsmanship across <em>every surface</em></h2>
-    <div class="services-grid">
+    <span class="eyebrow">Services</span>
+    <ul class="services-list">
 
-      <div class="service-card">
-        <span class="service-number">01</span>
-        <div class="service-line"></div>
-        <h3 class="service-title">Wallpaper Installation</h3>
-        <p class="service-desc">Precision hanging of paste-the-wall, traditional prepaste, and specialty papers — grasscloth, murals, seamed patterns, and more. Prep, sizing, and clean finishing included.</p>
-      </div>
+      <li>
+        <div class="service-name">Wallpaper Installation</div>
+        <p class="service-body">Paste-the-wall, pre-pasted, and traditionally hung papers. Grasscloth, murals, large repeats, seamed patterns, tricky corners — handled with patience and precision. Proper prep and sizing included.</p>
+      </li>
 
-      <div class="service-card">
-        <span class="service-number">02</span>
-        <div class="service-line"></div>
-        <h3 class="service-title">Wallpaper Removal</h3>
-        <p class="service-desc">Safe, thorough removal of old wallcoverings with full wall prep and skim coating to leave surfaces smooth and ready for whatever comes next.</p>
-      </div>
+      <li>
+        <div class="service-name">Wallpaper Removal</div>
+        <p class="service-body">Full removal of old wallcoverings, adhesive, and backing. Walls are skim-coated and sanded smooth before anything new goes up.</p>
+      </li>
 
-      <div class="service-card">
-        <span class="service-number">03</span>
-        <div class="service-line"></div>
-        <h3 class="service-title">Painting</h3>
-        <p class="service-desc">Interior and exterior painting with meticulous prep. Clean lines, durable finishes, and honest color consultation to make your space feel exactly right.</p>
-      </div>
+      <li>
+        <div class="service-name">Finish Carpentry</div>
+        <p class="service-body">Baseboards, crown molding, door and window casing, chair rail, wainscoting, and custom trim. The details that make a room feel finished.</p>
+      </li>
 
-      <div class="service-card">
-        <span class="service-number">04</span>
-        <div class="service-line"></div>
-        <h3 class="service-title">Finish Carpentry</h3>
-        <p class="service-desc">Baseboards, crown molding, casing, wainscoting, built-ins, and custom trim work. The details that make a room feel complete.</p>
-      </div>
+      <li>
+        <div class="service-name">Surface Prep & Painting</div>
+        <p class="service-body">Brush and roller work where it supports a wallpaper or carpentry project — accent walls, adjacent trim, ceilings.</p>
+      </li>
 
-    </div>
+    </ul>
   </section>
 
-  <!-- PORTFOLIO -->
   <section id="portfolio">
-    <span class="section-eyebrow">Our work</span>
-    <h2 class="section-heading">A record of <em>craft</em></h2>
-    <p class="portfolio-note">Photos coming soon — check back as the portfolio grows.</p>
+    <span class="eyebrow">Portfolio</span>
+    <p class="portfolio-intro">Photos coming — check back soon.</p>
     <div class="portfolio-grid">
-      <div class="portfolio-item">
-        <div class="portfolio-placeholder">
-          <div class="portfolio-plus"></div>
-          <span class="portfolio-caption">Wallpaper Installation</span>
-        </div>
+      <div class="portfolio-cell wide">
+        <span class="portfolio-cell-label">Wallpaper installation</span>
       </div>
-      <div class="portfolio-item">
-        <div class="portfolio-placeholder">
-          <div class="portfolio-plus"></div>
-          <span class="portfolio-caption">Finish Carpentry</span>
-        </div>
+      <div class="portfolio-cell">
+        <span class="portfolio-cell-label">Finish carpentry</span>
       </div>
-      <div class="portfolio-item">
-        <div class="portfolio-placeholder">
-          <div class="portfolio-plus"></div>
-          <span class="portfolio-caption">Painting</span>
-        </div>
+      <div class="portfolio-cell">
+        <span class="portfolio-cell-label">Wallpaper removal</span>
       </div>
-      <div class="portfolio-item">
-        <div class="portfolio-placeholder">
-          <div class="portfolio-plus"></div>
-          <span class="portfolio-caption">Removal &amp; Prep</span>
-        </div>
+      <div class="portfolio-cell">
+        <span class="portfolio-cell-label">Detail work</span>
       </div>
-      <div class="portfolio-item">
-        <div class="portfolio-placeholder">
-          <div class="portfolio-plus"></div>
-          <span class="portfolio-caption">Custom Details</span>
-        </div>
+      <div class="portfolio-cell">
+        <span class="portfolio-cell-label">Before & after</span>
       </div>
     </div>
-    <p class="portfolio-upload-note">
-      <span>To add photos: replace placeholder divs with &lt;img&gt; tags in index.html</span>
-    </p>
+    <p class="portfolio-hint">To add photos: drop an &lt;img&gt; tag inside any .portfolio-cell div.</p>
   </section>
 
-  <!-- SERVICE AREA -->
   <section id="area">
-    <div class="area-content">
-      <span class="section-eyebrow">Where we work</span>
-      <h2 class="section-heading">Proudly serving the <em>Northern Champlain Valley</em></h2>
-      <p class="area-blurb">Vermont Wallpaper Company serves homes and businesses throughout Vermont's Northern Champlain Valley — from Burlington north through the Champlain Islands and into Franklin and Grand Isle counties.</p>
-      <ul class="area-list">
-        <li>Burlington</li>
-        <li>South Burlington</li>
-        <li>Winooski</li>
-        <li>Colchester</li>
-        <li>Milton</li>
-        <li>St. Albans</li>
-        <li>Swanton</li>
-        <li>Grand Isle</li>
-        <li>Essex Junction</li>
-        <li>Shelburne</li>
-      </ul>
-      <p class="area-blurb" style="margin-top:1.5rem; font-size:0.85rem;">Not sure if we cover your area? Just ask — we're happy to travel for the right project.</p>
-    </div>
-
-    <div class="area-map" aria-label="Map of Northern Champlain Valley service area">
-      <div class="area-map-inner">
-        <svg class="champlain-graphic" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Lake Champlain shape (stylized) -->
-          <path d="M180 30 C185 50, 195 70, 190 100 C185 130, 200 150, 195 180 C190 210, 200 230, 190 260 C180 280, 175 300, 178 320"
-                stroke="#4A7260" stroke-width="18" stroke-linecap="round" opacity="0.3"/>
-          <!-- Vermont east shore -->
-          <path d="M178 320 C190 310, 210 280, 215 250 C220 220, 205 195, 212 165 C218 135, 208 105, 215 75 C220 55, 210 35, 200 25"
-                stroke="#243B2E" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
-          <!-- New York west shore -->
-          <path d="M178 320 C166 308, 148 278, 145 248 C142 218, 158 192, 152 162 C146 132, 156 102, 149 72 C145 52, 155 32, 165 22"
-                stroke="#243B2E" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
-          <!-- Label: Lake Champlain -->
-          <text x="180" y="175" font-family="Cormorant Garamond, serif" font-size="9" fill="#4A7260" text-anchor="middle" letter-spacing="2" opacity="0.6">LAKE CHAMPLAIN</text>
-          <!-- Dot: Burlington -->
-          <circle cx="230" cy="200" r="5" fill="#B8922A"/>
-          <text x="240" y="204" font-family="Jost, sans-serif" font-size="9" fill="#243B2E" opacity="0.8">Burlington</text>
-          <!-- Dot: St. Albans -->
-          <circle cx="218" cy="120" r="4" fill="#B8922A" opacity="0.7"/>
-          <text x="228" y="124" font-family="Jost, sans-serif" font-size="8" fill="#243B2E" opacity="0.6">St. Albans</text>
-          <!-- Dot: Shelburne -->
-          <circle cx="232" cy="240" r="3.5" fill="#B8922A" opacity="0.55"/>
-          <text x="240" y="244" font-family="Jost, sans-serif" font-size="8" fill="#243B2E" opacity="0.55">Shelburne</text>
-          <!-- Service area shading -->
-          <path d="M195 75 C210 80, 230 100, 235 130 C240 160, 225 180, 232 210 C238 238, 235 260, 220 280 L200 270 C210 252, 208 232, 202 208 C196 182, 210 158, 205 130 C200 102, 188 82, 192 68 Z"
-                fill="#4A7260" opacity="0.07"/>
-          <!-- Compass rose (minimal) -->
-          <g transform="translate(300, 60)">
-            <line x1="0" y1="-16" x2="0" y2="16" stroke="#243B2E" stroke-width="0.75" opacity="0.3"/>
-            <line x1="-16" y1="0" x2="16" y2="0" stroke="#243B2E" stroke-width="0.75" opacity="0.3"/>
-            <text x="0" y="-20" font-family="Jost, sans-serif" font-size="8" fill="#243B2E" text-anchor="middle" opacity="0.4">N</text>
-          </g>
-        </svg>
+    <div class="area-body">
+      <span class="eyebrow">Service Area</span>
+      <h2 class="area-heading">The <em>Northern Champlain Valley</em></h2>
+      <p>Based in North Ferrisburgh and working throughout the northern end of Lake Champlain — Burlington, the islands, Franklin County, and surrounding communities.</p>
+      <p>Not sure if you're in range? Reach out. Happy to travel for the right project.</p>
+      <div class="area-towns">
+        Burlington · South Burlington · Winooski · Colchester · Milton · Essex Junction · Shelburne · St. Albans · Swanton · Grand Isle · Vergennes
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact">
-    <div>
-      <span class="section-eyebrow">Get in touch</span>
-      <h2 class="section-heading">Let's talk about <em>your project</em></h2>
-      <div class="contact-details">
+    <div class="contact-block">
+      <span class="eyebrow">Contact</span>
+      <h2 class="contact-heading">Let's talk about <em>your project</em></h2>
+      <p class="contact-reach">Reach out by phone or email — happy to talk through what you have in mind and give a straight answer on whether it's a good fit.</p>
+      <div class="contact-items">
         <div>
-          <p class="contact-item-label">Phone</p>
-          <p class="contact-item-value"><a href="tel:+18028585222">(802) 858-5222</a></p>
+          <p class="contact-label">Phone</p>
+          <p class="contact-value"><a href="tel:+18028585222">(802) 858-5222</a></p>
         </div>
         <div>
-          <p class="contact-item-label">Email</p>
-          <p class="contact-item-value"><a href="mailto:info@vermontwallpapercompany.com">info@vermontwallpapercompany.com</a></p>
-        </div>
-        <div>
-          <p class="contact-item-label">Service Area</p>
-          <p class="contact-item-value" style="font-size:1.1rem;">Northern Champlain Valley, VT</p>
+          <p class="contact-label">Email</p>
+          <p class="contact-value"><a href="/cdn-cgi/l/email-protection#0c65626a634c7a697e616362787b6d60607c6d7c697e6f63617c6d6275226f6361"><span class="__cf_email__" data-cfemail="60090e060f201605120d0f0e1417010c0c1001100512030f0d10010e194e030f0d">[email&#160;protected]</span></a></p>
         </div>
       </div>
     </div>
-
-    <form class="contact-form" action="mailto:info@vermontwallpapercompany.com" method="GET" enctype="text/plain">
-      <div class="form-group">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Jane Smith" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="jane@example.com" required>
-      </div>
-      <div class="form-group">
-        <label for="service">Service Needed</label>
-        <select id="service" name="service">
-          <option value="">Select a service...</option>
-          <option>Wallpaper Installation</option>
-          <option>Wallpaper Removal</option>
-          <option>Painting</option>
-          <option>Finish Carpentry</option>
-          <option>Multiple / Not Sure</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="message">Tell Us About Your Project</label>
-        <textarea id="message" name="body" placeholder="A little about the space, timeline, or any questions you have..."></textarea>
-      </div>
-      <button type="submit" class="btn-submit">Send Message →</button>
-    </form>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <span class="footer-brand">Vermont Wallpaper Company</span>
-    <span class="footer-copy">© 2025 Elan Hugo · Northern Champlain Valley, Vermont</span>
-  </footer>
-
-</body>
-</html>
+    <span c
